@@ -3,27 +3,25 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:beans="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
-		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd"
 		 default-autowire="byName">
-	
-	
+	 <annotation-driven/>
+	  
 	<!-- context:component-scan base-package="website"/-->
-	
+	<default-servlet-handler/>
 	<!-- viewResolver setup -->
 	<context:component-scan base-package="website.controller" />
-
+     
     <beans:bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
     <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/jsp/" />
 		<beans:property name="suffix" value=".jsp" />
     </beans:bean>
-    
+   
     <!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
-	<resources mapping="/resources/**" location="/resources/" />
-	<resources location="/js/" mapping="/js/**"/>
-   	<resources location="/css/" mapping="/css/**"/>
-   	<resources location="/images/" mapping="/images/**"/>
-
+<!-- 	<resources mapping="/resources/**" location="/WEB-INF/resources/" /> --> 
+<!-- 	<resources location="/js/" mapping="/js/**"/> -->
+ 
 </beans:beans>

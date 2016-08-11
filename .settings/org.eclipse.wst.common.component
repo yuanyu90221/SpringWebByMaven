@@ -7,6 +7,9 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src.test.java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src.main.resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src.test.resources"/>
+        <wb-resource deploy-path="/WEB-INF/css" source-path="/WebContent/WEB-INF/css"/>
+        <wb-resource deploy-path="/WEB-INF/js" source-path="/WebContent/WEB-INF/js"/>
+        <wb-resource deploy-path="/WEB-INF/fonts" source-path="/WebContent/WEB-INF/fonts"/>
         <property name="context-root" value="SpringTest"/>
         <property name="java-output-path" value="/SpringTest/build/classes"/>
     </wb-module>
