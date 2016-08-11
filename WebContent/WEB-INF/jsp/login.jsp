@@ -33,6 +33,19 @@
 				<label class="checkbox">
 				<input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
 				</label>
+				<div class="container checkbox">
+
+					<div class="col-sm-8">
+						<div class="col-sm-3 control-label" style="text-align:left;padding-left:0px;margin-left=:0px;">
+							<label>繁體中文</label>
+							<input type="radio" class="radio-inline" name="radioGroup" id="cb_zh_TW" checked value="zh_TW">
+						</div>
+						<div class="col-sm-3 control-label" style="text-align:left;padding-left:0px;margin-left=:0px;">
+							<label>英文</label>
+							<input type="radio" class="radio-inline" name="radioGroup" id="cb_en_US" value="en_US">
+						</div>
+					</div>
+				</div>
 				<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
 			</form>
 		</div>
