@@ -19,59 +19,23 @@
     	<!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
     	<script src="js/bootstrap.min.js"></script>
 
-    	<link href="css/home.css" rel="stylesheet" />
+    	<link href="css/login.css" rel="stylesheet" />
+    	<link rel ="shortcut icon" type="image/x-icon" href="images/gorilla.ico"/>
 	</head>
-	<body>
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">首頁</a></li>
-						<li><a href="#">匯入檔案</a></li>
-						<li><a href="#">還原檔案</a></li>
-						<li><a href="#">使用者管理</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#"><span class="glyphicon glyphicon-user"></span>admin</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登出</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		  
-		<div class="container-fluid text-center">
-			<div class="row content">
-				<div class="col-sm-2 sidenav">
-					<p><a href="#">Pcap1</a></p>
-					<p><a href="#">Pcap2</a></p>
-					<p><a href="#">Pcap3</a></p>
-				</div>
-				<div class="col-sm-8 text-left">
-					<h1>Welcome</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<hr>
-					<h3>Test</h3>
-					<p>Lorem ipsum...</p>
-				</div>
-				<div class="col-sm-2 sidenav">
-					<div class="well">
-						<p>ADS</p>
-					</div>
-					<div class="well">
-						<p>ADS</p>
-					</div>
-				</div>
-			</div>
+	<body>		  
+		<div class="wrapper">
+			<form class="form-signin">
+				       
+				<h2 class="form-signin-heading text-center"><img src="images/gorilla.ico"class="spec_logo"/>Webtactical</h2>
+				<input type="text" class="form-control" name="username" placeholder="username" required="" autofocus="" />
+				<br/>
+				<input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+				<label class="checkbox">
+				<input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+				</label>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+			</form>
 		</div>
-		
 		<footer class="container-fluid text-center">
 			<p>Copyright&copy; 2015 Gorilla Technology, All Rights Reserved.</p>
 		</footer>
