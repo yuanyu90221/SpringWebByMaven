@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 	<display-name>SpringTest</display-name>
 	
-  
+  	
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -15,6 +15,11 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	<context-param>
+    <param-name>contextConfigLocation</param-name>
+    	<param-value>/WEB-INF/Spring-Datasource.xml</param-value>
+    </context-param>
+	
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>*.do</url-pattern>
